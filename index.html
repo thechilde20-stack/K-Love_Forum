@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>케일럽포럼 · K-LOVE &amp; CALEB</title>
+<meta name="description" content="시대를 분별하는 믿음, 다음세대를 깨우는 영성. 성경 속 갈렙을 모델로 세운 기독교 시민단체 케일럽포럼입니다.">
+<meta name="theme-color" content="#0D1520">
+<meta property="og:type" content="website">
+<meta property="og:title" content="케일럽포럼 · K-LOVE &amp; CALEB">
+<meta property="og:description" content="시대를 분별하는 믿음, 다음세대를 깨우는 영성.">
+<meta property="og:image" content="assets/home_hero.jpg">
+<!-- 웹폰트: Pretendard(jsDelivr) / Nanum Myeongjo(Google Fonts). 로딩 실패 시 시스템 서체로 대체됩니다. -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap">
+<style>
+:root{
+  --ink:#0D1520;--ink-2:#1A2637;
+  --sand:#F7F4EE;--sand-2:#EDE7DC;
+  --body:#3C4654;--muted:#7E8795;
+  --gold:#A8801F;--gold-2:#D8B458;--gold-3:#EBD9A6;
+  --rule:#DFD9CD;
+  --sans:"Pretendard Variable","Pretendard","Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",system-ui,sans-serif;
+  --serif:"Nanum Myeongjo","AppleMyungjo","Batang","바탕",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+body{margin:0;background:var(--sand);color:var(--body);font-family:var(--sans);word-break:keep-all;overflow-wrap:break-word;
+  font-size:16px;line-height:1.76;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1240px;margin:0 auto;padding:0 34px}
+section.s{padding:96px 0}
+h2{font-size:clamp(27px,3.5vw,40px);line-height:1.28;color:var(--ink);
+  font-weight:800;letter-spacing:-.028em;margin:0 0 18px}
+h3{color:var(--ink)}
+.kick{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:700;
+  color:var(--gold);letter-spacing:.12em;margin:0 0 15px}
+.kick::before{content:"";width:20px;height:1px;background:var(--gold)}
+.lead{font-size:17.5px;max-width:700px;margin:0}
+.flag{display:inline-block;background:#F2E6C4;color:#59470F;font-size:11.5px;
+  font-weight:700;padding:2px 9px;margin-left:6px}
+.btn{display:inline-block;text-decoration:none;font-size:15px;font-weight:700;padding:14px 26px}
+.btn.g{background:var(--gold-2);color:#1A1305}
+.btn.o{border:1px solid rgba(255,255,255,.42);color:#fff}
+.btn.d{background:var(--ink);color:#fff}
+.btn:hover{opacity:.9}
+.more{display:inline-block;margin-top:26px;font-size:15px;font-weight:700;color:var(--ink);
+  text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:3px}
+.more:hover{color:var(--gold)}
+
+/* ── 상단 바 ── */
+.top{position:fixed;top:0;left:0;right:0;z-index:80;transition:background .25s,border-color .25s}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;gap:18px}
+.top .bd{display:flex;align-items:center;gap:11px;text-decoration:none}
+.top .bd img{width:28px}
+.top .bd b{color:#fff;font-size:18px;font-weight:800;letter-spacing:-.01em}
+.top nav{display:flex;gap:4px}
+.top nav a{color:rgba(255,255,255,.78);text-decoration:none;font-size:14.5px;padding:8px 11px;
+  border-bottom:2px solid transparent}
+.top nav a:hover{color:#fff}
+.top nav a[aria-current="page"]{color:#fff;font-weight:700;border-bottom-color:var(--gold-2)}
+.top .blog{border:1px solid rgba(255,255,255,.4);color:#fff;text-decoration:none;
+  font-size:13.5px;font-weight:700;padding:9px 16px;white-space:nowrap}
+.top.solid{background:rgba(13,21,32,.95);backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.1)}
+.burger{display:none;border:1px solid rgba(255,255,255,.4);background:transparent;width:42px;height:38px;
+  cursor:pointer;flex-direction:column;gap:4px;align-items:center;justify-content:center}
+.burger span{width:17px;height:1.5px;background:#fff;display:block}
+@media(max-width:1120px){
+  .top nav{display:none;position:absolute;top:74px;left:0;right:0;background:rgba(13,21,32,.98);
+    flex-direction:column;padding:8px 26px 20px;gap:0}
+  .top nav.open{display:flex}
+  .top nav a{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:16px}
+  .top .blog{display:none}
+  .burger{display:flex}
+  .top.menu-open{background:rgba(13,21,32,.98)}
+}
+
+/* ── 홈 히어로 ── */
+.hero{position:relative;height:100vh;min-height:600px;overflow:hidden;background:var(--ink)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero .veil{position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(8,14,22,.88) 0%,rgba(8,14,22,.58) 42%,rgba(8,14,22,.2) 72%,rgba(8,14,22,.45) 100%)}
+.hero .in{position:absolute;inset:auto 0 0 0;padding-bottom:88px}
+.hero .emb{width:54px;margin-bottom:26px}
+.hero h1{font-size:clamp(34px,5.4vw,62px);line-height:1.2;color:#fff;font-weight:800;
+  letter-spacing:-.035em;margin:0;max-width:15ch;text-shadow:0 2px 30px rgba(0,0,0,.5)}
+.hero .vs{font-family:var(--serif);font-size:clamp(17px,2vw,21px);color:var(--gold-3);margin:20px 0 0}
+.hero .sub{max-width:520px;color:rgba(255,255,255,.82);font-size:16.5px;margin:16px 0 0}
+.hero .btns{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.hero .scroll{position:absolute;right:34px;bottom:40px;color:rgba(255,255,255,.6);
+  font-size:11.5px;letter-spacing:.16em;writing-mode:vertical-rl}
+
+/* ── 서브페이지 히어로 (5안 히어로의 축소판) ── */
+.phero{position:relative;height:min(58vh,480px);min-height:360px;overflow:hidden;background:var(--ink)}
+.phero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.phero .veil{position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(8,14,22,.9) 0%,rgba(8,14,22,.62) 46%,rgba(8,14,22,.28) 100%)}
+.phero .in{position:absolute;inset:auto 0 0 0;padding-bottom:58px}
+.phero .crumb{font-size:12.5px;color:rgba(255,255,255,.58);margin:0 0 14px}
+.phero .crumb a{text-decoration:none}
+.phero .crumb a:hover{color:#fff}
+.phero h1{font-size:clamp(30px,4.4vw,52px);line-height:1.22;color:#fff;font-weight:800;
+  letter-spacing:-.033em;margin:0;max-width:18ch;text-shadow:0 2px 26px rgba(0,0,0,.45)}
+.phero p.d{max-width:540px;color:rgba(255,255,255,.8);font-size:16.5px;margin:14px 0 0}
+
+/* ── 분할 ── */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.split.rev>div:first-child{order:2}
+.split figure{margin:0;position:relative}
+.split figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.split figure figcaption{font-family:var(--serif);position:absolute;left:0;bottom:-1px;
+  background:var(--ink);color:var(--gold-3);font-size:14px;padding:11px 18px}
+@media(max-width:900px){.split{grid-template-columns:1fr;gap:34px}.split.rev>div:first-child{order:0}}
+
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);
+  border:1px solid var(--rule);margin-top:56px}
+.pillars div{background:var(--sand);padding:26px 24px}
+.pillars .n{font-family:var(--serif);font-size:13px;color:var(--gold);display:block;margin-bottom:12px;letter-spacing:.1em}
+.pillars h3{margin:0 0 8px;font-size:17px;font-weight:700}
+.pillars p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.66}
+@media(max-width:900px){.pillars{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.pillars{grid-template-columns:1fr}}
+
+/* ── 선언 (사진 위) ── */
+.manif{position:relative;color:#fff;overflow:hidden}
+.manif>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.manif .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,15,24,.86),rgba(9,15,24,.93))}
+.manif .wrap{position:relative}
+.manif h2{color:#fff}.manif .lead{color:rgba(255,255,255,.78)}
+.tenets{display:grid;grid-template-columns:repeat(2,1fr);gap:0 54px;margin-top:44px}
+.tenet{border-top:1px solid rgba(216,180,88,.36);padding:24px 0}
+.tenet h3{font-family:var(--serif);margin:0 0 8px;font-size:21px;color:#fff;font-weight:700}
+.tenet h3 span{display:block;font-family:var(--sans);font-size:11.5px;color:var(--gold-2);
+  letter-spacing:.12em;margin-bottom:7px;font-weight:700}
+.tenet p{margin:0;font-size:14.5px;color:rgba(255,255,255,.66);line-height:1.72}
+@media(max-width:760px){.tenets{grid-template-columns:1fr}}
+
+/* ── 영상 띠 ── */
+.film{position:relative;height:min(64vh,540px);overflow:hidden;background:var(--ink)}
+.film>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.film .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,15,24,.3),rgba(9,15,24,.72))}
+.film .in{position:absolute;inset:auto 0 0 0;padding-bottom:52px;color:#fff}
+.film .in p{font-family:var(--serif);font-size:clamp(22px,3vw,36px);margin:0;text-shadow:0 2px 24px rgba(0,0,0,.5)}
+.film .in span{display:block;font-family:var(--sans);font-size:13.5px;color:var(--gold-3);margin-top:12px}
+.film .tag{position:absolute;left:34px;top:96px;z-index:3;background:var(--gold-3);color:#1A1305;
+  font-size:11.5px;font-weight:700;padding:5px 11px}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76px;height:76px;
+  border:1.5px solid rgba(255,255,255,.7);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.play::after{content:"";border-left:17px solid #fff;border-top:11px solid transparent;
+  border-bottom:11px solid transparent;margin-left:5px}
+
+/* ── 인사말 ── */
+.greet{display:grid;grid-template-columns:.95fr 1.05fr;gap:60px;align-items:start}
+.greet .q{font-family:var(--serif);font-size:clamp(23px,2.9vw,33px);line-height:1.62;color:var(--ink);margin:0}
+.greet .q b{color:var(--gold);font-weight:400}
+.greet .who{margin-top:26px;padding-top:18px;border-top:1px solid var(--rule)}
+.greet .who strong{display:block;font-size:18px;color:var(--ink)}
+.greet .who span{font-size:13.5px;color:var(--muted)}
+.greet p.t{margin:0 0 17px;font-size:16.5px}
+@media(max-width:900px){.greet{grid-template-columns:1fr;gap:30px}}
+.goals{border-top:1px solid var(--rule);margin-top:30px}
+.goals div{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.goals h4{margin:0;font-size:15.5px;color:var(--ink);font-weight:700}
+.goals h4 small{display:block;font-size:11px;color:var(--gold);letter-spacing:.08em;margin-bottom:3px}
+.goals p{margin:0;font-size:14.5px}
+@media(max-width:560px){.goals div{grid-template-columns:1fr;gap:6px}}
+
+/* ── 카드 ── */
+.works{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:50px}
+.work{text-decoration:none;display:block}
+.work img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.work .lb{display:block;font-size:11.5px;color:var(--gold);font-weight:700;letter-spacing:.1em;margin-top:16px}
+.work h3{margin:7px 0 8px;font-size:19px;font-weight:700}
+.work p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.7}
+a.work:hover h3{color:var(--gold)}
+@media(max-width:860px){.works{grid-template-columns:1fr}}
+
+/* ── 조직 ── */
+.dark{background:var(--ink);color:#fff}
+.dark h2{color:#fff}.dark .lead{color:rgba(255,255,255,.74)}
+.bu{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.bu>div{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);padding:22px}
+.bu .hd{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+.bu h3{margin:0;font-size:16.5px;color:#fff;font-weight:700}
+.bu .cnt{font-size:11.5px;color:var(--gold-2);border:1px solid rgba(216,180,88,.5);padding:2px 9px;font-weight:700}
+.bu .tm{font-size:11.5px;color:var(--gold-2);font-weight:700;margin:0 0 7px;letter-spacing:.05em}
+.bu ul{list-style:none;margin:0 0 12px;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.bu li{border:1px solid rgba(255,255,255,.18);padding:5px 11px;font-size:14px;color:#E6EBF2}
+.bu li em{font-style:normal;font-size:11.5px;color:rgba(255,255,255,.5);margin-left:5px}
+@media(max-width:980px){.bu{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.bu{grid-template-columns:1fr}}
+.note{font-size:13.5px;color:var(--muted);margin:24px 0 0}
+.dark .note{color:rgba(255,255,255,.55)}
+
+/* ── 단체 ── */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:40px 0 26px}
+.tabs button{border:1px solid var(--rule);background:transparent;font:inherit;font-size:14px;
+  color:var(--muted);padding:9px 18px;cursor:pointer}
+.tabs button:hover{border-color:var(--gold);color:var(--ink)}
+.tabs button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff;font-weight:700}
+.tabs button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.tiles article{background:var(--sand);padding:22px 20px;display:flex;flex-direction:column;min-height:148px}
+.tiles .bg{font-size:11.5px;color:var(--gold);font-weight:700;margin-bottom:10px}
+.tiles h3{margin:0 0 7px;font-size:15.5px;font-weight:700;line-height:1.42}
+.tiles p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.62;flex:1}
+.tiles a{margin-top:13px;font-size:13px;color:var(--gold);text-decoration:none}
+.tiles a:hover{text-decoration:underline}
+@media(max-width:1040px){.tiles{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:800px){.tiles{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.tiles{grid-template-columns:1fr}}
+
+/* ── 소식 ── */
+.feed{display:grid;grid-template-columns:1.45fr 1fr;gap:26px;margin-top:50px}
+.feed .big img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.feed time{font-size:12.5px;color:var(--gold);font-weight:700}
+.feed .big time{display:block;margin-top:18px}
+.feed .big h3{margin:8px 0 10px;font-size:23px;font-weight:700;line-height:1.4}
+.feed .big p{margin:0;font-size:15.5px;color:var(--muted)}
+.feed .col{display:flex;flex-direction:column;gap:20px}
+.feed .sm{display:grid;grid-template-columns:118px 1fr;gap:16px;align-items:start}
+.feed .sm img{width:118px;aspect-ratio:1/1;object-fit:cover}
+.feed .sm h3{margin:5px 0 5px;font-size:16px;font-weight:700;line-height:1.45}
+.feed .sm p{margin:0;font-size:13.5px;color:var(--muted)}
+@media(max-width:880px){.feed{grid-template-columns:1fr}}
+.blogline{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  margin-top:34px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:22px 0}
+.blogline p{margin:0;font-size:15.5px;color:var(--ink)}
+.blogline a{text-decoration:none;font-size:14.5px;font-weight:700;color:var(--gold);
+  border-bottom:1px solid var(--gold);padding-bottom:2px}
+
+/* ── 200인 ── */
+.two{position:relative;overflow:hidden;color:#fff;text-align:center}
+.two>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.two .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,15,24,.72),rgba(9,15,24,.9))}
+.two .wrap{position:relative}
+.two h2{color:#fff;max-width:22ch;margin:0 auto 18px}
+.two .lead{color:rgba(255,255,255,.78);margin:0 auto}
+.crit{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:48px;text-align:left;
+  border-top:1px solid var(--rule)}
+.crit div{padding:26px 26px 26px 0;border-right:1px solid var(--rule)}
+.crit div:last-child{border-right:none}
+.crit div:not(:first-child){padding-left:26px}
+.crit .i{font-family:var(--serif);font-size:12.5px;color:var(--gold);display:block;margin-bottom:11px;letter-spacing:.1em}
+.crit dt{font-size:19px;color:var(--ink);font-weight:700;margin:0 0 8px}
+.crit dd{margin:0;font-size:14.5px;color:var(--muted);line-height:1.7}
+@media(max-width:760px){.crit{grid-template-columns:1fr}
+  .crit div{border-right:none;border-bottom:1px solid var(--rule);padding:22px 0!important}}
+
+/* ── 연계 ── */
+.rel{display:grid;grid-template-columns:1fr 76px 1fr;align-items:center;margin-top:46px}
+.rel .b{border:1px solid var(--rule);background:#fff;padding:30px 32px}
+.rel .b.me{background:var(--ink);border-color:var(--ink);color:rgba(255,255,255,.72)}
+.rel .rl{font-size:11.5px;letter-spacing:.1em;color:var(--gold);font-weight:700;margin:0 0 10px}
+.rel h3{margin:0 0 10px;font-size:21px;font-weight:800}
+.rel .b.me h3{color:#fff}
+.rel p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.72}
+.rel .b.me p{color:rgba(255,255,255,.68)}
+.rel a{display:inline-block;margin-top:16px;font-size:14px;color:var(--gold);text-decoration:none;
+  border-bottom:1px solid var(--gold);padding-bottom:2px}
+.rel .b.me a{color:var(--gold-3);border-color:var(--gold-2)}
+.rel .mid{text-align:center;position:relative;font-size:11.5px;color:var(--muted);letter-spacing:.08em}
+.rel .mid::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--rule)}
+.rel .mid span{position:relative;background:var(--sand);padding:0 6px}
+@media(max-width:820px){.rel{grid-template-columns:1fr}.rel .mid{padding:16px 0}.rel .mid::before{display:none}}
+
+/* ── 문의 ── */
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.info div{border:1px solid var(--rule);background:#fff;padding:28px}
+.info h4{margin:0 0 8px;font-size:12px;color:var(--gold);letter-spacing:.1em;font-weight:700}
+.info p{margin:0;font-size:18px;color:var(--ink)}
+.info a{text-decoration:none}
+@media(max-width:760px){.info{grid-template-columns:1fr}}
+
+/* ── 사진 CTA 띠 ── */
+.cta{position:relative;overflow:hidden;color:#fff;text-align:center}
+.cta>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cta .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,15,24,.7),rgba(9,15,24,.9))}
+.cta .wrap{position:relative;padding:84px 34px}
+.cta h2{color:#fff;max-width:20ch;margin:0 auto 14px}
+.cta p{color:rgba(255,255,255,.76);max-width:560px;margin:0 auto 28px;font-size:16.5px}
+
+/* ── 페이지 끝 ── */
+.pfoot{border-top:1px solid var(--rule);margin-top:64px;padding-top:28px;display:flex;
+  justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14.5px}
+.pfoot a{text-decoration:none;color:var(--ink);font-weight:700}
+.pfoot a:hover{color:var(--gold)}
+.pfoot span{color:var(--muted)}
+
+/* ── 꼬리말 ── */
+footer{background:var(--ink);color:rgba(255,255,255,.55);padding:60px 0 40px}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px}
+.fbrand{display:flex;gap:13px;align-items:flex-start}
+.fbrand img{width:42px}
+.fbrand b{display:block;color:#fff;font-size:17px;font-weight:800}
+.fbrand span{font-size:9.5px;letter-spacing:.24em;color:var(--gold-2);display:block;margin:3px 0 11px}
+.fbrand p{margin:0;font-size:13.5px;line-height:1.7}
+footer h4{color:#fff;font-size:14.5px;margin:0 0 12px;font-weight:700}
+footer p{margin:0 0 7px;font-size:14px}
+footer a{text-decoration:none;color:rgba(255,255,255,.55)}
+footer a:hover{color:var(--gold-3)}
+.fbot{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;color:#67748A}
+@media(max-width:880px){.fg{grid-template-columns:1fr 1fr;gap:26px}}
+@media(max-width:560px){.fg{grid-template-columns:1fr}}
+
+/* ── 추가: 접근성 · 포털 카드 · 토스트 · 문의 양식 ── */
+:focus-visible{outline:3px solid var(--gold-2);outline-offset:3px}
+h1:focus{outline:none}
+.skip{position:absolute;left:-999px;top:0;background:var(--gold-2);color:var(--ink);padding:10px 16px;z-index:200;font-weight:700}
+.skip:focus{left:8px;top:8px}
+button.play{background:rgba(13,21,32,.35);padding:0;cursor:pointer}
+button.play:hover{background:rgba(216,180,88,.35)}
+
+.portals{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink)}
+.portal{display:block;text-decoration:none;padding:28px 28px 30px 0}
+.portal+.portal{padding-left:28px;border-left:1px solid var(--rule)}
+.portal h3{font-family:var(--serif);font-size:24px;margin:0 0 8px;font-weight:800}
+.portal p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.7}
+.portal span{display:inline-block;margin-top:14px;font-size:14px;color:var(--gold);font-weight:700}
+.portal:hover h3{color:var(--gold)}
+@media(max-width:820px){
+  .portals{grid-template-columns:1fr}
+  .portal,.portal+.portal{padding:22px 0;border-left:0;border-bottom:1px solid var(--rule)}
+}
+
+.info a.wrapall{overflow-wrap:anywhere;font-size:16px}
+.cf{margin-top:40px;background:#fff;border:1px solid var(--rule);padding:32px 30px 34px;max-width:720px}
+.cf h3{margin:0 0 6px;font-size:19px}
+.cf .note{margin:10px 0 0}
+.cf label.f{display:block;margin:20px 0 6px;font-size:14.5px;font-weight:700;color:var(--ink)}
+.cf input[type=text],.cf input[type=email],.cf textarea{width:100%;font:inherit;font-size:15.5px;color:var(--ink);
+  border:1px solid #CFC8B8;background:var(--sand);padding:12px 14px;border-radius:0}
+.cf textarea{min-height:140px;resize:vertical}
+.cf .agree{display:flex;gap:10px;align-items:flex-start;margin-top:20px;font-size:14.5px}
+.cf .agree input{width:18px;height:18px;margin-top:5px;flex:none}
+.cf button[disabled]{margin-top:22px;border:0;background:#CFC8B8;color:#fff;font:inherit;font-size:15px;
+  font-weight:700;padding:14px 26px;cursor:not-allowed}
+
+#toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);background:var(--ink);color:#fff;
+  border:1px solid var(--gold-2);padding:13px 22px;font-size:15px;opacity:0;pointer-events:none;
+  transition:opacity .25s,transform .25s;z-index:300;max-width:calc(100vw - 32px);text-align:center}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+@media (prefers-reduced-motion:reduce){#toast{transition:none}}
+
+[data-page]{display:none}
+[data-page].on{display:block}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+
+<header class="top" id="topbar">
+  <div class="wrap">
+    <a class="bd" href="#/"><img data-img="logo" alt=""><b>케일럽포럼</b></a>
+    <nav id="nav">
+      <a href="#/about">소개</a>
+      <a href="#/greeting">인사말</a>
+      <a href="#/org">조직</a>
+      <a href="#/works">사역</a>
+      <a href="#/partners">함께하는 단체</a>
+      <a href="#/news">소식</a>
+      <a href="#/join">200인</a>
+      <a href="#/contact">문의</a>
+    </nav>
+    <a class="blog" href="https://blog.naver.com/calebforum2026" target="_blank" rel="noopener">공식 블로그</a>
+    <button class="burger" id="burger" aria-label="메뉴"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ═════ 홈 ═════ -->
+<div data-page="home">
+  <div class="hero">
+    <img data-img="home_hero" alt="산지를 바라보는 갈렙">
+    <div class="veil"></div>
+    <div class="in"><div class="wrap">
+      <img class="emb" data-img="logo" alt="">
+      <h1>85세에도 산지를 구한 사람이 있었습니다</h1>
+      <p class="vs">“이 산지를 지금 내게 주소서” &nbsp;여호수아 14장 12절</p>
+      <p class="sub">시대를 분별하는 믿음과 다음세대를 깨우는 영성으로,
+        공공의 가치를 지키는 기독 리더 공동체입니다.</p>
+      <div class="btns">
+        <a class="btn g" href="#/about">케일럽포럼 소개</a>
+        <a class="btn o" href="#/join">200인 함께하기</a>
+      </div>
+    </div></div>
+    <span class="scroll">SCROLL</span>
+  </div>
+
+  <section class="s">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <p class="kick">케일럽포럼</p>
+          <h2>갈렙의 야성으로<br>시대의 산지를 취합니다</h2>
+          <p class="lead">갈렙은 이방인 출신임에도 오직 믿음으로 공동체의 핵심 리더가 되었고,
+            노년까지 험준한 산지를 개척한 신앙 전수의 산증인입니다.
+            우리는 그 야성으로 성경적 가치관을 수호하며, 다음세대를 향한 따뜻한 사랑과
+            책임감을 실천합니다.</p>
+          <a class="more" href="#/about">소개 더 보기</a>
+        </div>
+        <figure>
+          <img data-img="valley" alt="약속의 땅">
+          <figcaption>그가 밟은 땅을 내가 그와 그의 자손에게 주리라</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" style="padding-top:0">
+    <div class="wrap">
+      <div class="portals">
+        <a class="portal" href="#/about"><h3>시대분별</h3>
+          <p>이념의 편향을 거부하고, 도전받는 성경적 진리 위에서 무엇이 옳은지 분별합니다.</p><span>소개 보기</span></a>
+        <a class="portal" href="#/works"><h3>공적 책임</h3>
+          <p>침묵하지 않는 용기로 공공 영역에서 정책적 대안을 제시하며 공공선을 지킵니다.</p><span>사역 보기</span></a>
+        <a class="portal" href="#/join"><h3>선한 영향력</h3>
+          <p>신뢰받는 지도자를 검증하고 훈련하며, 다음세대에 영적·지적 자산을 물려줍니다.</p><span>200인 보기</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="film">
+    <img data-img="trail" alt="">
+    <div class="veil"></div>
+    <span class="tag">메인 영상 자리 · 갈렙 영상</span>
+    <button type="button" class="play" data-soon="갈렙 영상은 곧 연결됩니다." aria-label="갈렙 영상 재생"></button>
+    <div class="in"><div class="wrap">
+      <p>그 곳에는 아낙 사람이 있고 그 성읍들은 크고 견고할지라도</p>
+      <span>여호수아 14장 12절</span>
+    </div></div>
+  </div>
+
+  <section class="s" style="background:var(--sand-2)">
+    <div class="wrap">
+      <p class="kick">하는 일</p>
+      <h2>말이 삶이 될 때<br>사람은 깨어납니다</h2>
+      <p class="lead">담론에만 머물지 않고, 일상에서 체감할 수 있는 실천을 만들어 갑니다.</p>
+      <div class="works">
+        <a class="work" href="#/works">
+          <img data-img="round" alt="">
+          <span class="lb">싱크탱크</span>
+          <h3>케일럽 라운드테이블</h3>
+          <p>목회자와 기독 전문가가 정기적으로 만나 지역사회의 공공선을 위해 협력할 방안을 논의합니다.</p>
+        </a>
+        <a class="work" href="#/works">
+          <img data-img="mentor" alt="">
+          <span class="lb">다음세대</span>
+          <h3>케일럽 아카데미</h3>
+          <p>각 분야를 성경적 관점으로 해석하는 교육 콘텐츠를 제공하고 공적 영역으로 나갈 청년을 돕습니다.</p>
+        </a>
+        <a class="work" href="#/works">
+          <img data-img="serve" alt="">
+          <span class="lb">현장</span>
+          <h3>케일럽 Life</h3>
+          <p>재난 현장과 소외된 지역에 전문가 봉사단을 보내고, 외로운 이웃을 위한 식탁을 엽니다.</p>
+        </a>
+      </div>
+      <a class="more" href="#/works">사역 전체 보기</a>
+    </div>
+  </section>
+
+  <section class="s">
+    <div class="wrap">
+      <p class="kick">최근 소식</p>
+      <h2>선언에 그치지 않습니다</h2>
+      <div class="feed">
+        <article class="big">
+          <img data-img="recep" alt="">
+          <time>2026. 04. 28</time>
+          <h3>북콘서트 ‘Reader가 Leader가 되는 시간’</h3>
+          <p>창립 이후 첫 공식 사역으로 사랑의교회 은혜홀에서 열렸습니다.
+            차세대 리더 일곱 명이 저서를 바탕으로 청중과 직접 대화하는 북토크 형식으로 진행되었습니다.</p>
+        </article>
+        <div class="col">
+          <article class="sm">
+            <img data-img="seminar" alt="">
+            <div><time>2026. 04. 16</time>
+              <h3>창립감사예배 및 대표 취임식</h3>
+              <p>한국기독교연합회관에서 케일럽 선언을 낭독했습니다.</p></div>
+          </article>
+          <article class="sm">
+            <img data-img="campus" alt="">
+            <div><time>2026. 04. 16</time>
+              <h3>20여 개 전문 분과 구성</h3>
+              <p>중독예방·기후과학·법률·미디어선교 등으로 분과를 꾸렸습니다.</p></div>
+          </article>
+        </div>
+      </div>
+      <a class="more" href="#/news">소식 전체 보기</a>
+    </div>
+  </section>
+
+  <div class="two">
+    <img data-img="seoul" alt="">
+    <div class="veil"></div>
+    <div class="wrap" style="padding:96px 34px">
+      <p class="kick" style="justify-content:center">200인</p>
+      <h2>시세를 알고 마땅히 행할 바를 아는<br>기독 리더 200인을 세웁니다</h2>
+      <p class="lead">숫자는 결과입니다. 검증된 사람을 선발하고 반복적으로 훈련하여
+        실제 책임을 맡기는 구조를 만드는 일이 핵심입니다.</p>
+      <p style="margin-top:30px"><a class="btn g" href="#/join">200인 자세히 보기</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- ═════ 소개 ═════ -->
+<div data-page="about">
+  <div class="phero">
+    <img data-img="a_hero" alt="">
+    <div class="veil"></div>
+    <div class="in"><div class="wrap">
+      <p class="crumb"><a href="#/">홈</a> &nbsp;·&nbsp; 소개</p>
+      <h1>갈렙의 야성으로<br>시대의 산지를 취합니다</h1>
+      <p class="d">성경 속 갈렙을 모델로 세워진 기독교 시민단체입니다.</p>
+    </div></div>
+  </div>
+
+  <section class="s">
+    <div class="wrap">
+      <div class="split rev">
+        <div>
+          <p class="kick">케일럽포럼</p>
+          <h2>이방인 출신이 공동체의<br>핵심 리더가 되기까지</h2>
+          <p class="lead">갈렙은 이방인 출신임에도 오직 믿음으로 공동체의 핵심 리더가 되었고,
+            노년까지 변함없는 충성과 진취력으로 험준한 산지를 개척한 신앙 전수의 산증인입니다.
+            우리는 그 야성으로 성경적 가치관을 수호하며, 일반 대중에게는 K-Love라는 이름처럼
+            다음세대를 향한 따뜻한 사랑과 책임감을 실천하는 리더 공동체가 되고자 합니다.</p>
+          <p class="lead" style="margin-top:16px">기성세대의 야성과 청년세대의 혁신을 결합해,
+            시대의 혼란 앞에서도 침묵하지 않는 용기를 실천합니다.</p>
+        </div>
+        <figure><img data-img="grapes" alt=""></figure>
+      </div>
+      <div class="pillars">
+        <div><span class="n">하나</span><h3>영성</h3><p>하나님을 온전히 좇는 경외함으로 하루를 시작합니다.</p></div>
+        <div><span class="n">둘</span><h3>야성</h3><p>시대의 혼란 앞에서도 침묵하지 않는 용기를 냅니다.</p></div>
+        <div><span class="n">셋</span><h3>지속성</h3><p>노년에도 산지를 구했던 열정과 책임감을 이어갑니다.</p></div>
+        <div><span class="n">넷</span><h3>다음세대</h3><p>미래 세대에 물려줄 영적·지적 자산을 만들어 갑니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="manif">
+    <img data-img="bible" alt="">
+    <div class="veil"></div>
+    <section class="s">
+      <div class="wrap">
+        <p class="kick">케일럽 선언</p>
+        <h2>시대의 산지를 취하는 기독 지성</h2>
+        <p class="lead">성경적 진리가 도전받고 가치가 왜곡되는 혼돈의 시대 속에,
+          하나님을 경외하는 신앙과 냉철한 지성을 겸비한 현대판 갈렙으로 부름받았음을
+          확신하며 다음과 같이 선언합니다.</p>
+        <div class="tenets">
+          <div class="tenet"><h3><span>하나</span>경외와 진리</h3>
+            <p>오직 여호와만을 온전히 따르며 진리를 수호한다. 변치 않는 성경적 진리를
+              공공 영역의 기준으로 삼아 왜곡된 가치를 바로잡는 파수꾼이 된다.</p></div>
+          <div class="tenet"><h3><span>둘</span>분별과 저항</h3>
+            <p>이념의 편향을 거부하고 신뢰받는 권위를 세운다. 정직한 성품과 탁월한 실력으로
+              사회적 책임을 다하는 지성적 리더 공동체를 지향한다.</p></div>
+          <div class="tenet"><h3><span>셋</span>공공선과 실천</h3>
+            <p>침묵하지 않고 공적 영역에서 선한 영향력을 발휘한다. 고립된 정의가 아닌
+              모두를 위한 공공선을 실천하기 위해 행동한다.</p></div>
+          <div class="tenet"><h3><span>넷</span>계승과 헌신</h3>
+            <p>이어지는 다음세대에게 바른 방향과 영적 유산을 전수한다. 그들이 딛고 일어설
+              지적·영적 토대를 구축하는 데 모든 역량을 헌신한다.</p></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="s">
+    <div class="wrap">
+      <p class="kick">연계 활동</p>
+      <h2>함께 움직이는 구조</h2>
+      <p class="lead">상하 관계가 아니라 역할의 분담입니다.</p>
+      <div class="rel">
+        <div class="b">
+          <p class="rl">광역 활동 체계</p>
+          <h3>굿파이트<span class="flag">명칭 확인</span></h3>
+          <p>여러 영역의 활동을 아우르는 넓은 운동 체계입니다.
+            상세 기획과 활동 내용은 해당 사이트에서 보실 수 있습니다.</p>
+          <a href="#" data-soon="굿파이트 연계 사이트 주소가 확정되면 연결됩니다.">사이트로 이동</a>
+        </div>
+        <div class="mid"><span>연계</span></div>
+        <div class="b me">
+          <p class="rl">싱크탱크</p>
+          <h3>케일럽포럼</h3>
+          <p>정책 연구와 아카데미, 지역 라운드테이블을 통해 목회자와 전문가가
+            대등하게 소통하는 구조를 만들고, 공적 영역에 설 다음세대 리더를 세웁니다.</p>
+          <a href="#/works">사역 보기</a>
+        </div>
+      </div>
+      <div class="pfoot"><span>다음</span><a href="#/greeting">인사말</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═════ 인사말 ═════ -->
+<div data-page="greeting">
+  <div class="phero">
+    <img data-img="g_hero" alt="" style="object-position:50% 30%">
+    <div class="veil"></div>
+    <div class="in"><div class="wrap">
+      <p class="crumb"><a href="#/">홈</a> &nbsp;·&nbsp; 인사말</p>
+      <h1>권위가 아니라 섬김으로</h1>
+      <p class="d">케일럽포럼 대표 홍호수</p>
+    </div></div>
+  </div>
+
+  <section class="s">
+    <div class="wrap">
+      <div class="greet">
+        <div>
+          <p class="q">저는 대표로서 권위가 아니라 <b>섬김</b>으로,<br>지시가 아니라 <b>본</b>으로<br>이 공동체를 섬기겠습니다</p>
+          <div class="who">
+            <strong>홍호수</strong>
+            <span>케일럽포럼 대표 · 사)청소년중독예방운동본부 이사장</span>
+          </div>
+        </div>
+        <div>
+          <p class="t">먼저 인간의 생사화복과 역사를 주관하시는 하나님 아버지께 모든 감사와 영광을
+            올려드립니다. 저는 하나님을 온전히 좇았던 갈렙의 신앙을 본받고, 시세를 알고 마땅히
+            행할 것을 아는 잇사갈 자손의 지혜를 구하며 대표직을 맡게 되었습니다.</p>
+          <p class="t">엄중한 시대적 상황 속에서 이 자리에 서게 된 것은 개인의 영광이나 기쁨이기에 앞서,
+            우리 사회와 시대를 향한 하나님의 준엄한 부르심이라 믿습니다.
+            지금 우리가 마주한 대한민국은 가치의 왜곡과 사회적 혼란이 극에 달해 있습니다.
+            무엇이 옳고 그른지 분간하기 어려운 이 시대의 어둠 앞에서, 누군가는 침묵하지 않는
+            용기를 내어야 합니다.</p>
+          <div class="goals">
+            <div><h4><small>첫째</small>침묵하지 않는 용기</h4>
+              <p>단순히 비판하는 데 그치지 않고 공공 영역에서 성경적 진리에 기반한 정책적 대안을 제시하겠습니다.</p></div>
+            <div><h4><small>둘째</small>신뢰받는 200명</h4>
+              <p>숫자는 결과이고 핵심은 검증된 사람을 선발하고 반복적으로 훈련하여 실제 책임을 맡기는 구조입니다.</p></div>
+            <div><h4><small>셋째</small>영적·지적 자산</h4>
+              <p>미래는 저절로 오지 않습니다. 다음세대에게 물려줄 지적 토대를 단단히 쌓겠습니다.</p></div>
+          </div>
+          <p class="t" style="margin-top:26px">오늘부터 저는 가장 낮은 곳에서 여러분의 목소리에 귀 기울이며
+            쉼 없이 뛰겠습니다. 감사합니다.</p>
+        </div>
+      </div>
+      <div class="pfoot"><span>다음</span><a href="#/org">조직</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═════ 조직 ═════ -->
+<div data-page="org">
+  <div class="phero">
+    <img data-img="org" alt="">
+    <div class="veil"></div>
+    <div class="in"><div class="wrap">
+      <p class="crumb"><a href="#/">홈</a> &nbsp;·&nbsp; 조직</p>
+      <h1>스무 개가 넘는 전문 분과가<br>각자의 자리를 맡습니다</h1>
+      <p class="d">여섯 개 본부가 분과를 나누어 운영합니다.</p>
+    </div></div>
+  </div>
+
+  <section class="s dark">
+    <div class="wrap">
+      <p class="kick">분과와 조직</p>
+      <h2>사람과 역할</h2>
+      <p class="lead">중독예방, 기후과학, 문화사역, 법률, 미디어선교, 교육, 생명윤리, 청년, 인권, 국제.
+        각 영역의 전문가가 분과를 맡고 있습니다.</p>
+      <div class="bu" id="bu"></div>
+      <p class="note">이름과 직책만 공개하며 개인 사진과 상세 프로필은 넣지 않았습니다.
+        소속 단체 표기 여부는 검토 중입니다.<span class="flag">결정 필요</span></p>
+      <div class="pfoot" style="border-color:rgba(255,255,255,.14)">
+        <span>다음</span><a href="#/works" style="color:#fff">사역</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═════ 사역 ═════ -->
+<div data-page="works">
+  <div class="phero">
+    <img data-img="w_hero" alt="" style="object-position:50% 38%">
+    <div class="veil"></div>
+    <div class="in"><div class="wrap">
+      <p class="crumb"><a href="#/">홈</a> &nbsp;·&nbsp; 사역</p>
+      <h1>말이 삶이 될 때<br>사람은 깨어납니다</h1>
+      <p class="d">담론에만 머물지 않고, 일상에서 체감할 수 있는 실천을 만들어 갑니다.</p>
+    </div></div>
+  </div>
+
+  <section class="s" style="padding-top:80px">
+    <div class="wrap">
+      <p class="kick">하는 일</p>
+      <h2>여섯 갈래의 사역</h2>
+      <div class="works" style="margin-top:40px">
+        <article class="work"><img data-img="round" alt="">
+          <span class="lb">싱크탱크</span><h3>케일럽 라운드테이블</h3>
+          <p>지역별로 목회자와 기독 전문가가 정기적으로 만나 지역사회의 공공선을 위해 협력할 방안을 논의합니다.</p></article>
+        <article class="work"><img data-img="mentor" alt="">
+          <span class="lb">다음세대</span><h3>케일럽 아카데미</h3>
+          <p>정치·경제·윤리·과학 각 분야를 성경적 관점으로 해석하는 교육 콘텐츠를 제공하고, 미디어 속 메시지를 비판적으로 읽는 힘을 길러 줍니다.</p></article>
+        <article class="work"><img data-img="talk" alt="">
+          <span class="lb">리더십</span><h3>리더십 아카데미</h3>
+          <p>신앙이 교회 안에만 머물지 않도록 돕습니다. 공적 영역으로 진출하는 다음세대에게 지지 기반과 네트워크를 제공합니다.</p></article>
+        <article class="work"><img data-img="film" alt="">
+          <span class="lb">미디어</span><h3>Decode the Culture</h3>
+          <p>청소년이 매일 접하는 영상과 게임 속 세계관을 분석하고, 숨겨진 인본주의와 허무주의를 찾아내는 훈련을 함께합니다.</p></article>
+        <article class="work"><img data-img="serve" alt="">
+          <span class="lb">현장</span><h3>케일럽 Life</h3>
+          <p>재난 현장과 소외된 지역에 전문가 봉사단을 보내고, 외로운 1인 가구와 고립된 청년을 위한 따뜻한 식탁을 엽니다.</p></article>
+        <article class="work"><img data-img="cello" alt="">
+          <span class="lb">문화</span><h3>문화사역</h3>
+          <p>음악과 공연, 출판과 영상으로 복음의 가치를 전하고 기독 문화인이 각자의 전문 영역에서 탁월해지도록 돕습니다.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" style="background:var(--sand-2)">
+    <div class="wrap">
+      <div class="split">
+        <figure><img data-img="walk" alt=""></figure>
+        <div>
+          <p class="kick">케일럽 프로보노</p>
+          <h2>공익을 위하여,<br>공공의 이익을 위하여</h2>
+          <p class="lead">법조인과 교수를 비롯한 전문가들이 힘을 모아 교육의 자율성 회복,
+            가정 중심의 사회 구조 개편, 기회의 평등을 위한 규제 개혁,
+            외교·안보 가치 동맹 강화 등의 과제를 다룹니다.</p>
+        </div>
+      </div>
+      <div class="pfoot"><span>다음</span><a href="#/partners">함께하는 단체</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═════ 함께하는 단체 ═════ -->
+<div data-page="partners">
+  <div class="phero">
+    <img data-img="p_hero" alt="">
+    <div class="veil"></div>
+    <div class="in"><div class="wrap">
+      <p class="crumb"><a href="#/">홈</a> &nbsp;·&nbsp; 함께하는 단체</p>
+      <h1>가치로 연대합니다</h1>
+      <p class="d">교권 중심의 결집이 아니라 가치 중심의 연대입니다.</p>
+    </div></div>
+  </div>
+
+  <section class="s" style="padding-top:80px">
+    <div class="wrap">
+      <p class="kick">함께하는 단체</p>
+      <h2>스물여섯 곳의 동역</h2>
+      <p class="lead">각 단체의 활동은 해당 홈페이지에서 이어 보실 수 있습니다.</p>
+      <div class="tabs" id="tabs"></div>
+      <div class="tiles" id="tiles"></div>
+      <div class="pfoot"><span>다음</span><a href="#/news">소식</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═════ 소식 ═════ -->
+<div data-page="news">
+  <div class="phero">
+    <img data-img="n_hero" alt="">
+    <div class="veil"></div>
+    <div class="in"><div class="wrap">
+      <p class="crumb"><a href="#/">홈</a> &nbsp;·&nbsp; 소식</p>
+      <h1>선언에 그치지 않습니다</h1>
+      <p class="d">지금 하고 있는 일들을 기록합니다.</p>
+    </div></div>
+  </div>
+
+  <section class="s" style="padding-top:80px">
+    <div class="wrap">
+      <div class="feed" style="margin-top:0">
+        <article class="big">
+          <img data-img="recep" alt="">
+          <time>2026. 04. 28</time>
+          <h3>북콘서트 ‘Reader가 Leader가 되는 시간’</h3>
+          <p>창립 이후 첫 공식 사역으로 사랑의교회 은혜홀에서 열렸습니다.
+            차세대 리더 일곱 명이 저서를 바탕으로 청중과 직접 대화하는 북토크 형식으로 진행되어,
+            성경적 세계관을 각자의 전문 영역에서 어떻게 살아낼지를 나눴습니다.</p>
+        </article>
+        <div class="col">
+          <article class="sm">
+            <img data-img="seminar" alt="">
+            <div><time>2026. 04. 16</time>
+              <h3>창립감사예배 및 대표 취임식</h3>
+              <p>한국기독교연합회관 그레이스홀에서 케일럽 선언을 낭독했습니다.</p></div>
+          </article>
+          <article class="sm">
+            <img data-img="campus" alt="">
+            <div><time>2026. 04. 16</time>
+              <h3>20여 개 전문 분과 운영이사회 구성</h3>
+              <p>중독예방·기후과학·법률·미디어선교 등으로 분과를 꾸렸습니다.</p></div>
+          </article>
+          <article class="sm">
+            <img data-img="door" alt="">
+            <div><time>일정 조정 중</time>
+              <h3>산지기도회</h3>
+              <p>정기 기도 모임으로 이어 갑니다. 참여 방법은 확정되는 대로 안내합니다.</p></div>
+          </article>
+        </div>
+      </div>
+      <div class="blogline">
+        <p>더 많은 활동 기록과 사진은 공식 블로그에서 보실 수 있습니다.</p>
+        <a href="https://blog.naver.com/calebforum2026" target="_blank" rel="noopener">네이버 블로그 바로가기</a>
+      </div>
+      <div class="pfoot"><span>다음</span><a href="#/join">200인</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═════ 200인 ═════ -->
+<div data-page="join">
+  <div class="phero">
+    <img data-img="seoul" alt="">
+    <div class="veil"></div>
+    <div class="in"><div class="wrap">
+      <p class="crumb"><a href="#/">홈</a> &nbsp;·&nbsp; 200인</p>
+      <h1>시세를 알고 마땅히 행할 바를 아는<br>기독 리더 200인</h1>
+      <p class="d">역대상 12장 32절의 말씀에 따라 지도자를 세웁니다.</p>
+    </div></div>
+  </div>
+
+  <section class="s" style="padding-top:80px">
+    <div class="wrap">
+      <p class="kick">200인</p>
+      <h2>숫자는 결과입니다</h2>
+      <p class="lead">200명을 모으는 것보다 200명이 신뢰받는 지도자가 되도록 하는 일이 핵심입니다.
+        검증된 사람을 선발하고 반복적으로 훈련하여 실제 책임을 맡기는 구조를 만듭니다.</p>
+      <dl class="crit">
+        <div><span class="i">기준 하나</span><dt>시세를 알고</dt>
+          <dd>이 시대의 반기독교 세속 풍조와 흐름을 꿰뚫어 보는 사람</dd></div>
+        <div><span class="i">기준 둘</span><dt>마땅히 행할 바를 아는</dt>
+          <dd>각자의 삶과 전문 영역에서 해야 할 일을 묵묵히 감당하는 사람</dd></div>
+        <div><span class="i">기준 셋</span><dt>형제를 통솔하는</dt>
+          <dd>자신뿐 아니라 함께 싸우는 이들을 모으고 이끄는 사람</dd></div>
+      </dl>
+      <p class="note">신청 접수 기능은 넣지 않았습니다. 실제 모집을 받을 것인지,
+        참여 확대를 보여주는 표현으로 둘 것인지에 따라 달라집니다.<span class="flag">결정 필요</span></p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <img data-img="lamp" alt="">
+    <div class="veil"></div>
+    <div class="wrap">
+      <h2>오직 여분네의 아들 갈렙은<br>온전히 여호와께 순종하였은즉</h2>
+      <p>그는 약속의 땅을 볼 것이요 그가 밟은 땅을 내가 그와 그의 자손에게 주리라 (신명기 1장 36절)</p>
+      <a class="btn g" href="#/contact">문의하기</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═════ 문의 ═════ -->
+<div data-page="contact">
+  <div class="phero">
+    <img data-img="door" alt="">
+    <div class="veil"></div>
+    <div class="in"><div class="wrap">
+      <p class="crumb"><a href="#/">홈</a> &nbsp;·&nbsp; 문의</p>
+      <h1>문은 열려 있습니다</h1>
+      <p class="d">함께 서기를 원하시거나 궁금한 점이 있으시면 언제든 연락 주십시오.</p>
+    </div></div>
+  </div>
+
+  <section class="s" style="padding-top:80px">
+    <div class="wrap">
+      <p class="kick">문의</p>
+      <h2>사무국</h2>
+      <div class="info">
+        <div><h4>담당</h4><p>사무총장 이진수</p></div>
+        <div><h4>전화</h4><p><a href="tel:0226998414">02-2699-8414</a></p></div>
+        <div><h4>공식 블로그</h4><p><a class="wrapall" href="https://blog.naver.com/calebforum2026" target="_blank" rel="noopener">blog.naver.com/calebforum2026</a></p></div>
+      </div>
+      <form class="cf" onsubmit="return false" aria-labelledby="cft">
+        <h3 id="cft">온라인 문의</h3>
+        <p class="note">양식은 화면 구성만 있으며 아직 전송되지 않습니다. 개인정보 수집·이용 동의 문구와 관리 책임자가 정해지면 열립니다.<span class="flag">결정 필요</span></p>
+        <label class="f" for="cname">이름</label><input id="cname" type="text" autocomplete="name">
+        <label class="f" for="cmail">이메일</label><input id="cmail" type="email" autocomplete="email">
+        <label class="f" for="cmsg">문의 내용</label><textarea id="cmsg"></textarea>
+        <label class="agree"><input type="checkbox" id="cagree"><span>개인정보 수집·이용에 동의합니다.</span></label>
+        <button type="submit" disabled>전송 준비 중</button>
+      </form>
+      <div class="pfoot"><span>처음으로</span><a href="#/">홈</a></div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div class="fbrand">
+        <img data-img="logo" alt="">
+        <div>
+          <b>케일럽포럼</b><span>K-LOVE &amp; CALEB</span>
+          <p>시대를 분별하는 믿음, 다음세대를 깨우는 영성<br>신뢰있는 권위와 품격 있는 영향력으로</p>
+        </div>
+      </div>
+      <div><h4>단체</h4>
+        <p><a href="#/about">소개</a></p><p><a href="#/greeting">인사말</a></p><p><a href="#/org">조직</a></p></div>
+      <div><h4>활동</h4>
+        <p><a href="#/works">사역</a></p><p><a href="#/partners">함께하는 단체</a></p><p><a href="#/news">소식</a></p></div>
+      <div><h4>참여</h4>
+        <p><a href="#/join">200인</a></p><p><a href="#/contact">문의</a></p>
+        <p><a href="https://blog.naver.com/calebforum2026" target="_blank" rel="noopener">공식 블로그</a></p></div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 케일럽포럼 (CalebForum)</span>
+      <span>홈페이지 8차 시안 · 내용은 확정 전 자료입니다</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const IMG = {
+  "home_hero": "assets/home_hero.jpg",
+  "valley": "assets/valley.jpg",
+  "trail": "assets/trail.jpg",
+  "bible": "assets/bible.jpg",
+  "round": "assets/round.jpg",
+  "mentor": "assets/mentor.jpg",
+  "serve": "assets/serve.jpg",
+  "recep": "assets/recep.jpg",
+  "seminar": "assets/seminar.jpg",
+  "campus": "assets/campus.jpg",
+  "door": "assets/door.jpg",
+  "seoul": "assets/seoul.jpg",
+  "org": "assets/org.jpg",
+  "a_hero": "assets/a_hero.jpg",
+  "grapes": "assets/grapes.jpg",
+  "g_hero": "assets/g_hero.jpg",
+  "w_hero": "assets/w_hero.jpg",
+  "p_hero": "assets/p_hero.jpg",
+  "n_hero": "assets/n_hero.jpg",
+  "talk": "assets/talk.jpg",
+  "film": "assets/film.jpg",
+  "cello": "assets/cello.jpg",
+  "walk": "assets/walk.jpg",
+  "lamp": "assets/lamp.jpg",
+  "logo": "assets/logo.png"
+};
+document.querySelectorAll("img[data-img]").forEach(function(i){
+  if (!i.closest(".hero")) i.loading = "lazy";
+  i.onerror = function(){ i.style.visibility = "hidden"; };
+  i.src = IMG[i.dataset.img];
+});
+
+/* ── 토스트: 준비 중인 기능 안내 ── */
+const toastEl = document.createElement("div");
+toastEl.id = "toast"; toastEl.setAttribute("role","status"); toastEl.setAttribute("aria-live","polite");
+document.body.appendChild(toastEl);
+let toastT;
+function toast(msg){
+  toastEl.textContent = msg; toastEl.classList.add("show");
+  clearTimeout(toastT); toastT = setTimeout(function(){ toastEl.classList.remove("show"); }, 2600);
+}
+document.addEventListener("click", function(e){
+  const t = e.target.closest && e.target.closest("[data-soon]");
+  if (!t) return;
+  e.preventDefault(); toast(t.getAttribute("data-soon"));
+});
+
+/* ── 상단 바 ── */
+const bar = document.getElementById("topbar");
+function onScroll(){ bar.classList.toggle("solid", window.scrollY > 80); }
+window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+/* ── 페이지 전환 (클릭 기반 — 미리보기 환경에서도 동작) ── */
+const PAGES = ["home","about","greeting","org","works","partners","news","join","contact"];
+const TITLES = {home:"케일럽포럼",about:"소개",greeting:"인사말",org:"조직",works:"사역",
+  partners:"함께하는 단체",news:"소식",join:"200인",contact:"문의"};
+function keyOf(href){
+  if (!href) return null;
+  const i = href.indexOf("#/");
+  if (i < 0) return null;
+  const k = href.slice(i + 2).replace(/\/+$/, "");
+  return k === "" ? "home" : k;
+}
+let firstShow = true;
+function show(page){
+  if (PAGES.indexOf(page) < 0) page = "home";
+  document.querySelectorAll("[data-page]").forEach(function(el){
+    el.classList.toggle("on", el.dataset.page === page);
+  });
+  document.querySelectorAll("#nav a").forEach(function(a){
+    a.setAttribute("aria-current", keyOf(a.getAttribute("href")) === page ? "page" : "false");
+  });
+  document.title = page === "home" ? "케일럽포럼" : "케일럽포럼 · " + TITLES[page];
+  document.getElementById("nav").classList.remove("open");
+  bar.classList.remove("menu-open");
+  try { window.scrollTo({top:0,left:0,behavior:"instant"}); } catch(e){ window.scrollTo(0,0); }
+  try { history.replaceState(null, "", "#/" + (page === "home" ? "" : page)); } catch(e){}
+  onScroll();
+  if (!firstShow) {
+    const h = document.querySelector("[data-page].on h1");
+    if (h) { h.setAttribute("tabindex","-1"); h.focus({preventScroll:true}); }
+  }
+  firstShow = false;
+}
+document.addEventListener("click", function(e){
+  const a = e.target.closest && e.target.closest('a[href*="#/"]');
+  if (!a || a.target === "_blank") return;
+  const k = keyOf(a.getAttribute("href"));
+  if (k === null) return;
+  e.preventDefault();
+  show(k);
+}, true);
+window.addEventListener("hashchange", function(){ show(keyOf(location.hash) || "home"); });
+document.getElementById("burger").addEventListener("click", function(){
+  const n = document.getElementById("nav");
+  n.classList.toggle("open");
+  bar.classList.toggle("menu-open", n.classList.contains("open"));
+});
+show(keyOf(location.hash) || "home");
+
+/* ── 조직 ── */
+const BUREAUS = [
+  {n:"대표단", teams:[["", [["홍호수","대표"],["이진수","사무총장"],["신상철","감사"],["박은희","감사"]]]]},
+  {n:"영성본부", teams:[["지도위원 및 목회자", [["김영길",""],["성창민",""],["안석문",""],["안희환",""],["이명진",""],["주연종",""]]]]},
+  {n:"전략정책본부", teams:[
+    ["공공정책팀", [["박소영","정치사회"],["지영준","법률정책"],["조평세","국제정책"],["김기홍","기후과학정책"]]],
+    ["가치정책팀", [["서윤화","생명윤리"],["이　훈","교회정책"],["김민섭","문화사역정책"],["박진권","인권"],["현숙경","국제인권"]]]]},
+  {n:"교육리더십본부", teams:[["", [["김태영","교육기획"],["이환희","청년리더십"],["김윤기","선교"],["권민경","중독예방"]]]]},
+  {n:"미디어홍보본부", teams:[["", [["이우성","미디어선교"],["장선범","홍보"],["이석배","마케팅"],["김미성","디자인"]]]]},
+  {n:"대외협력확산본부", teams:[
+    ["네트워크협력팀", [["서요한","대외협력"],["김철홍","교회협력"],["김요환","교육협력"],["박성제","법률협력"]]],
+    ["확산실행팀", [["주찬영","문화사역협력"],["장다윗","청년협력"],["이동엽","기후과학협력"]]]]},
+  {n:"운영지원본부", teams:[["", [["정순진","경영지원"]]]]}
+];
+const bu = document.getElementById("bu");
+BUREAUS.forEach(function(b){
+  const total = b.teams.reduce(function(s,t){ return s + t[1].length; }, 0);
+  const el = document.createElement("div");
+  el.innerHTML = '<div class="hd"><h3>' + b.n + '</h3><span class="cnt">' + total + '명</span></div>' +
+    b.teams.map(function(t){
+      return (t[0] ? '<p class="tm">' + t[0] + '</p>' : '') + '<ul>' +
+        t[1].map(function(p){ return '<li>' + p[0] + (p[1] ? '<em>' + p[1] + '</em>' : '') + '</li>'; }).join("") + '</ul>';
+    }).join("");
+  bu.appendChild(el);
+});
+
+/* ── 단체 ── */
+const CATS = {
+  "교회": [
+    ["성혈교회","복음이 전부라는 확신 위에 선 복음주의 교회"],
+    ["더바이블처치","말씀과 성령의 균형을 추구하는 교회"],
+    ["추풍령교회","교회와 마을을 잇는 농촌 교회"],
+    ["본어게인교회","청년세대를 제자화하는 교회"],
+    ["아침교회","예배와 양육, 선교에 진심인 교회"],
+    ["시티브릿지교회","예배 운동으로 지역과 다음세대를 섬김"],
+    ["건강한 사회를 위한 목회자 모임","건강한 사회를 위해 활동하는 목회자 모임"]
+  ],
+  "시민·정책": [
+    ["사)청소년중독예방운동본부","중독 없는 사회와 가정을 위한 예방·치유·재활"],
+    ["한국교회 다음세대지킴이 연합","다음세대가 거룩한 이음세대가 되도록 돕는 단체"],
+    ["옳은가치시민연합","헌법 질서와 성경적 가치를 지키는 시민단체"],
+    ["아름다운피켓","태아 생명 존중을 알리는 프로라이프 단체"],
+    ["홀리센터","성정체성 문제를 겪는 이들의 회복을 돕는 공동체"],
+    ["수도권기독교총연합회","수도권 교회의 연합과 지역 복음화"],
+    ["JDR","대구 동성로를 예배의 처소로 세워가는 연합회"]
+  ],
+  "교육·연구": [
+    ["자유와 인권 연구소","종교와 양심의 자유를 보호하는 법적 활동"],
+    ["복음법률가회","법률이 복음을 따르도록 돕는 법률 운동 협회"],
+    ["1776연구소","자유·신앙·가정의 가치를 다음세대에 전달"],
+    ["행크연구소","기도하는 영성과 행동하는 지성의 플랫폼"],
+    ["클린텔 코리아","올바른 기후과학을 알리는 재단 한국지부"],
+    ["교육바로세우기운동본부","입시 공정성과 바른 역사·가치 교육"],
+    ["더포윈즈1327","청년 제자훈련과 전문인 선교사 양성"]
+  ],
+  "문화·미디어": [
+    ["한국문화선교 기획연구소","성경을 기준으로 시대와 문화를 연구"],
+    ["더워드미디어","정치·경제·신앙 이슈를 연결하는 콘텐츠 플랫폼"],
+    ["프로덕션 이사야","공공·다큐멘터리·교육 콘텐츠 전문 제작사"],
+    ["사)소리로 국제오페라단","음악과 공연으로 복음을 전하는 문화선교 단체"],
+    ["워십퍼스무브먼트","스스로 예배의 주체가 되는 예배 운동"]
+  ]
+};
+/* 단체 홈페이지 주소가 확정되면 여기에 추가: URLS["더워드미디어"] = "https://..." */
+const URLS = {};
+const tabs = document.getElementById("tabs"), tiles = document.getElementById("tiles");
+["전체"].concat(Object.keys(CATS)).forEach(function(c,i){
+  const b = document.createElement("button");
+  b.type = "button"; b.textContent = c;
+  b.setAttribute("aria-pressed", i === 0 ? "true" : "false");
+  b.addEventListener("click", function(){
+    tabs.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed","false"); });
+    b.setAttribute("aria-pressed","true"); drawTiles(c);
+  });
+  tabs.appendChild(b);
+});
+function drawTiles(cat){
+  let rows = [];
+  Object.keys(CATS).forEach(function(k){
+    if (cat === "전체" || cat === k) CATS[k].forEach(function(x){ rows.push([k, x[0], x[1]]); });
+  });
+  tiles.innerHTML = rows.map(function(r){
+    return '<article><span class="bg">' + r[0] + '</span><h3>' + r[1] + '</h3><p>' + r[2] +
+      '</p>' + (URLS[r[1]] ? '<a href="' + URLS[r[1]] + '" target="_blank" rel="noopener">홈페이지 바로가기</a>'
+        : '<a href="#" data-soon="해당 단체의 홈페이지 주소가 확정되면 연결됩니다.">홈페이지 바로가기</a>') + '</article>';
+  }).join("");
+}
+drawTiles("전체");
+</script>
+</body>
+</html>
